@@ -18,7 +18,7 @@
 # estimations of the difference in RMST, its variance and the 95% confidence intevral for the 5 methods for one simulated dataset saved in txt files
 
 
-sim_PH <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, i, name.file){
+sim_PH <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, d, name.file){
   
   ###### Generate one dataset ######
   dataset <- generate_data_PH(K, m, lambda, rho, gamma, beta, censoring)
