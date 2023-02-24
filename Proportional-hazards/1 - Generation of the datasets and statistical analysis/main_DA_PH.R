@@ -55,20 +55,20 @@ t_star <- 365
   
 	write.table(data.frame("d" = "d",
 	                       "K" = "K",
-                         "m" = "m",
-                         "HR" = "HR",
-                         "tau" = "tau",
-                         "censoring"="censoring",
-                         "clustering" = "clustering", 
-                         "delta.rmst" = "delta.rmst", 
-                         "var" = "var", 
+                               "m" = "m",
+                               "HR" = "HR",
+                               "tau" = "tau",
+                               "censoring"="censoring",
+                               "clustering" = "clustering", 
+                               "delta.rmst" = "delta.rmst", 
+                               "var" = "var", 
 	                       "ci.low" = "ci.low", 
-                         "ci.up" = "ci.up",
-                         "method" = "method",
-                         "t_star" = "t_star"), 
-            file = paste(name.file, ".txt", sep = ""), 
-            sep = " ", dec = ".",
-            col.names = FALSE, row.names = FALSE)
+                               "ci.up" = "ci.up",
+                               "method" = "method",
+                               "t_star" = "t_star"), 
+                   file = paste(name.file, ".txt", sep = ""), 
+                   sep = " ", dec = ".",
+                   col.names = FALSE, row.names = FALSE)
 
 	dir.create(name.file)
 
