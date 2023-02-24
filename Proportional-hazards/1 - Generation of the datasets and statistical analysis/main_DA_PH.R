@@ -43,7 +43,7 @@ t_star <- 365
 
 # Generation of the data and analysis 
 ##########################################################################################################################################################
-###Create file to save data 
+### Create a file to save data and a folder to save the datasets 
 setwd("~/your/path/to/Simulated_datasets/") # set directory where the simulated datasets and the estimations will be saved
   
 name.file <- paste("K=", table_parameter[ , "K"], 
