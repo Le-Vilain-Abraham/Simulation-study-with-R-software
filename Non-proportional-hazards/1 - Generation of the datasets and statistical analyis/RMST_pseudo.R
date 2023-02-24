@@ -23,24 +23,21 @@ RMST_pseudo <- function(dataset, t_star) {
   fit1_gee <- gee(pv ~ arm, 
                   data = data_pseudo, 
                   id = id_patient, 
-                  family = gaussian, 
-                  scale.fix = TRUE)
+                  family = gaussian)
   
   ############# Method accounting for clustering (independent matrix) #############
   fit2_gee <- gee(pv ~ arm, 
                   data = data_pseudo, 
                   id = cluster, 
                   family = gaussian, 
-                  corstr = "independence",  
-                  scale.fix = TRUE)
+                  corstr = "independence")
   
   ############# Method accounting for clustering (exchangeable matrix) #############
   fit3_gee <- gee(pv ~ arm, 
                   data = data_pseudo, 
                   id = cluster, 
                   family = gaussian, 
-                  corstr = "exchangeable",  
-                  scale.fix = TRUE)
+                  corstr = "exchangeable")
 
 
   ############# Estimations #############
