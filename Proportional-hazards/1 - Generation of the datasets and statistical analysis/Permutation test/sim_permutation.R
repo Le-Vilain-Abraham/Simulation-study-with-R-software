@@ -30,7 +30,7 @@ sim_permutation <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, d
   
   ###### Save results ######
   write.table(cbind(d = d,
- 		                K = K,
+                    K = K,
                     m = m,
                     HR = exp(beta),
                     tau = ifelse(gamma == 0, 0 ,1/(1 + 2*gamma)),
