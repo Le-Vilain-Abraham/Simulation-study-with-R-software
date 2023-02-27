@@ -38,7 +38,7 @@ permutation <- function(dataset, t_star) {
   
   ##################################################################################
   ################################ Permutation test ################################
-  #Permutation
+  #Allocations
   Per <- 5
   K <- max(dataset$cluster)
   
@@ -57,7 +57,7 @@ permutation <- function(dataset, t_star) {
   ############# Method accounting for clustering (exchangeable matrix) #############
   if(fit_gee_exc$error == 0){ ### convergence
     
-    if(K > 10){ #K > 10
+    if(K > 10){ # K > 10
       indic <- c()
       i <- 0
       results_permutation_exc <- c()
@@ -80,7 +80,6 @@ permutation <- function(dataset, t_star) {
   }
 
   ############# Method accounting for clustering (independent matrix) #############
-  
   if(fit_gee_ind$error == 0){ ### convergence 
     
     if (K > 10){ # K > 10
