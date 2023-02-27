@@ -24,13 +24,13 @@ source("permutation_test.R")
 # Parameters
 ###########################################################################################################
 #Parameter of the scenario
-table_parameter <- data.frame("D" = 2,          #number of simulated dataset
+table_parameter <- data.frame("D" = 2,             #number of simulated dataset
                               "K" = 20,            #total number of clusters (should be pair)
                               "m" = 80,            #mean cluster size
                               "lambda" = 0.000016, #scale parameter of the Weibull distribution 
                               "rho" = 2,           #shape parameter of the Weibull distribution
                               "gamma" =  4.5,      #parameter of the gamma distribution of the frailty term
-                              "beta"= log(0),    #intervention effect (beta)
+                              "beta"= log(0),      #intervention effect (beta)
                               "censoring" = 0.2,   #censoring rate (between 0 and 1)
                               "seed" = 1598)       #seed
 
