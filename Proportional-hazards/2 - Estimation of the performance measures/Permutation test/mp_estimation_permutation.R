@@ -20,7 +20,7 @@ mp_onescenario365PH<- function(dataset) {
   for(mat in c("ind", "exc")) {
     results <-rbind(results, 
                     cbind(matrix = data[which(data$matrix==mat),]$matrix[1],
-                          tie = mean(data[which(data$matrix==mat),]$pvalue < 0.05)))
+                          tie = mean(data[which(data$matrix==mat),]$pvalue <= 0.05)))
   }
 
   return(results)
