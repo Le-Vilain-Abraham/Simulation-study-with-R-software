@@ -7,7 +7,7 @@
 # t_star: horizon time (float > 0)
 
 ####  Values ####
-#results: estimations of the pseudo-values (data.frame)
+#results: estimations of the p-values for the independent and exchangeable matrix (data.frame)
 
 
 permutation <- function(dataset, t_star) {
