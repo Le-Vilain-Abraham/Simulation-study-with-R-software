@@ -1,5 +1,5 @@
 ########################################################################################
-# Initialisations of the search procedure
+# Construction of one permutation-based confidence bound (lower or upper bound)
 ########################################################################################
 
 #####  Arguments  #####
