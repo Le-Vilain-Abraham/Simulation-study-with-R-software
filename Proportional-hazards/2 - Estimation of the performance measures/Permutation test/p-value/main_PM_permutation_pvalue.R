@@ -17,7 +17,7 @@ source("performance_measures.R")
 
 # Estimation of the type I error rate
 ##########################################################################################################################################################
-# set the directory and the name of the file where all the estimations of the pseudo-values were saved in step 1
+# set the directory and the name of the file where all the estimations of the p-values were saved in step 1
 dataset <- read.table("~/your/path/to/analysis/name_of_your_file.txt", sep = " ", dec = ".",  header=T)
 
 #data pour lesquels ça a convergé
