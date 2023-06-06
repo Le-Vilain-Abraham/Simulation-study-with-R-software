@@ -17,7 +17,7 @@
 # estimations of the p-value with the permutation test witg pseudo-values regression in txt file
 
 
-sim_permutation <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, d, name.file){
+sim_permutation_pvalue <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, d, name.file){
   
   ###### Load one dataset ######
   ## set directory where the simulated datasets have been saved
