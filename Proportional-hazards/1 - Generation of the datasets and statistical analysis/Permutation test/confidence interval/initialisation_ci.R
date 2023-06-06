@@ -1,5 +1,5 @@
 ########################################################################################
-# To initialise of the confidence bounds for the search procedure: 
+# To initialise the confidence bounds for the search procedure: 
 # Estimate one permuted kappa from the permutation test H0 : beta1 = beta1_hat
 ########################################################################################
 
