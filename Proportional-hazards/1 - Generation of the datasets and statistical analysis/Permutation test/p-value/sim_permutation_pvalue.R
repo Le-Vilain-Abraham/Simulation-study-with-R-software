@@ -21,7 +21,7 @@ sim_permutation_pvalue <- function(K, m, lambda, rho, gamma, beta, censoring, t_
   
   ###### Load one dataset ######
   ## set directory where the simulated datasets have been saved
-  dataset <- read.table(file = paste("~/your/path/to/Simulated_datasets/",name.file, "/dataset", i, ".txt", sep = ""),
+  dataset <- read.table(file = paste("~/your/path/to/Simulated_datasets/",name.file, "/dataset", d, ".txt", sep = ""),
                         header = T, sep = " ", dec = ".")
   dataset <- dataset[order(dataset[ , "arm"], decreasing = T), ]
 
