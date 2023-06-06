@@ -35,8 +35,9 @@ sim_permutation_ci <- function(K, m, lambda, rho, gamma, beta, censoring, t_star
   ci <- ci(data_pseudo, "independence")
   
   results <- data.frame(matrix = "ind",
-                        ci_low =ci$ci_low,
-                        ci_up =ci$ci_up)
+                        ci_low = ci$ci_low,
+                        ci_up = ci$ci_up,
+                        t_star = t_star)
 
   ###### Save results ######
   write.table(cbind(d = d,
