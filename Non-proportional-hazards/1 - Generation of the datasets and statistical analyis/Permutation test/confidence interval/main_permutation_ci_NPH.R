@@ -36,6 +36,7 @@ table_parameter <- data.frame("D" = 2,             #number of simulated dataset
                               "rho" = 2,           #shape parameter of the Weibull distribution
                               "gamma" =  4.5,      #parameter of the gamma distribution of the frailty term
                               "beta"= log(0.5),      #intervention effect (beta)
+                              "t_delay" = 90,      #change point
                               "censoring" = 0.2,   #censoring rate (between 0 and 1)
                               "seed" = 1598)       #seed
 
@@ -52,6 +53,7 @@ name.file <- paste("K=", table_parameter[ ,"K"],
                    "-m=", table_parameter[ ,"m"], 
                    "-tau=", ifelse(table_parameter[ ,"gamma"]==0, 0 ,1/(1+2*table_parameter[ ,"gamma"])), 
                    "-HR=", exp(table_parameter[ ,"beta"]),
+                   "-t_delay=", table_parameter[ , "t_delay"],
                    "-censoring=",table_parameter[ ,"censoring"], 
                    sep = "")
 
