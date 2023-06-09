@@ -17,7 +17,7 @@
 # estimations of the permutation-based confidence interval with pseudo-values regression in txt file
 
 
-sim_permutation_ci <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, d, name.file){
+sim_permutation_ci_NPH <- function(K, m, lambda, rho, gamma, beta, t_delay, censoring, t_star, d, name.file){
   
   ###### Load one dataset ######
   ## set directory where the simulated datasets have been saved
@@ -44,6 +44,7 @@ sim_permutation_ci <- function(K, m, lambda, rho, gamma, beta, censoring, t_star
                     K = K,
                     m = m,
                     HR = exp(beta),
+                    t_delay = t_delay,
                     tau = ifelse(gamma == 0, 0 ,1/(1 + 2*gamma)),
                     censoring = censoring,
                     results), 
