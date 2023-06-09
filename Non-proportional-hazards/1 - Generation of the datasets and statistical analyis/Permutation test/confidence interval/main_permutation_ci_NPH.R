@@ -77,13 +77,13 @@ write.table(data.frame("d" = "d",
 registerDoParallel(cores = 8) #set the number of cores
 set.seed(table_parameter[ ,"seed"])
 res <- foreach(d = 1: table_parameter[ ,"D"],
-               .packages = c("pseudo", "gee", "survRM2", "foreach")) %dorng% sim_permutation_ci(K = table_parameter[ ,"K"], 
-                                                                                                m = table_parameter[ ,"m"], 
-                                                                                                lambda = table_parameter[ ,"lambda"], rho = table_parameter[ ,"rho"], 
-                                                                                                gamma = table_parameter[ ,"gamma"], 
-                                                                                                beta = table_parameter[ ,"beta"],
-                                                                                                t_delay = table_parameter[ ,"t_delay"],
-                                                                                                censoring = table_parameter[,"censoring"], 
-                                                                                                t_star = t_star, 
-                                                                                                d, 
-                                                                                                name.file) 
+               .packages = c("pseudo", "gee", "survRM2", "foreach")) %dorng% sim_permutation_ci_NPH(K = table_parameter[ ,"K"], 
+                                                                                                    m = table_parameter[ ,"m"], 
+                                                                                                    lambda = table_parameter[ ,"lambda"], rho = table_parameter[ ,"rho"], 
+                                                                                                    gamma = table_parameter[ ,"gamma"], 
+                                                                                                    beta = table_parameter[ ,"beta"],
+                                                                                                    t_delay = table_parameter[ ,"t_delay"],
+                                                                                                    censoring = table_parameter[,"censoring"], 
+                                                                                                    t_star = t_star, 
+                                                                                                    d, 
+                                                                                                    name.file) 
