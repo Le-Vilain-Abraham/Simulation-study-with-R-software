@@ -10,7 +10,7 @@
 # Coverage rate for the  (data.frame)
 
 
-pm_estimation_permutation_NPH <- function(dataset) {
+pm_estimation_permutation_PH <- function(dataset) {
 
   results <- performance_measures(365, 
                                  lambda = 0.000016, 
