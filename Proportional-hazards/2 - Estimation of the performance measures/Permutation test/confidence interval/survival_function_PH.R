@@ -14,7 +14,7 @@
 # survival at time t
 
 
-survival_function_NPH <- function(t,lambda, rho, Z, beta, gamma){
+survival_function_PH <- function(t,lambda, rho, Z, beta, gamma){
   if(gamma == 0 ) {
     exp(-lambda*(t^rho*exp(beta*Z)))
   } else {
