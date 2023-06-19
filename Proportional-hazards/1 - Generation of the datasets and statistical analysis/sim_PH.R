@@ -28,7 +28,7 @@ sim_PH <- function(K, m, lambda, rho, gamma, beta, censoring, t_star, d, name.fi
     dataset <- generate_data_PH(K, m, lambda, rho, gamma, beta, censoring)
   }
 
-  dataset <- dataset[order(dataset[ , "arm"], decreasing = T), ]
+  dataset <- dataset[order(dataset[ , "cluster"], decreasing = T), ]
   
   ###### Save the dataset ######
   write.table(dataset, 
