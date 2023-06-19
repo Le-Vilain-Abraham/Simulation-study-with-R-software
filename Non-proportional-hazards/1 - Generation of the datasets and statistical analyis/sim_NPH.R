@@ -29,7 +29,7 @@ sim_NPH <- function(K, m, lambda, rho, gamma, beta, t_delay, censoring, t_star, 
     dataset <- generate_data_NPH(K, m, lambda, rho, gamma, beta, t_delay, censoring)
   }
 
-  dataset <- dataset[order(dataset[ , "arm"], decreasing = T), ]
+  dataset <- dataset[order(dataset[ , "cluster"], decreasing = T), ]
   
   ###### Save the dataset ######
   write.table(dataset, 
