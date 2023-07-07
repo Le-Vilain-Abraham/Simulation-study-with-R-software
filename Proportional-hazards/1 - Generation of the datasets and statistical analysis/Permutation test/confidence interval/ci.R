@@ -11,7 +11,7 @@
 
 
 ci <- function(dataset, matrix) {
-  dataset$arm.obs <- data_pseudo$arm
+  dataset$arm.obs <- dataset$arm
 
   log <- capture.output(suppressMessages(fit_gee <- gee(pv ~ arm, 
                                                             data = dataset, 
