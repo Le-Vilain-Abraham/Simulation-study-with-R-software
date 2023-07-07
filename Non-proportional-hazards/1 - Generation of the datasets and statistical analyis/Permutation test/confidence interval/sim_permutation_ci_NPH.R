@@ -30,7 +30,6 @@ sim_permutation_ci_NPH <- function(K, m, lambda, rho, gamma, beta, t_delay, cens
                       pv = pseudomean(dataset$time,
                                       dataset$status,
                                       tmax = t_star))
-  data_pseudo$arm.obs <- data_pseudo$arm
 
   ci <- ci(data_pseudo, "independence")
   
