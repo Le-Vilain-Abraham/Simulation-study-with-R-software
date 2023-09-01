@@ -7,7 +7,7 @@
 # dataset: dataset of the 1000 estimations of difference in RMST, its variance and 95% confidence interval (data.frame)
 
 ####  Values ####
-# Coverage rate for the  (data.frame)
+# Coverage rate (data.frame)
 
 
 pm_estimation_permutation_PH <- function(dataset) {
